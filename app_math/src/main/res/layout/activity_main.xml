@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/etfirst"
+       android:layout_margin="3dp"
+       android:hint="عدد اول را وارد کنید"
+       android:inputType="number"
+       android:textDirection="rtl"
+
+       />
+
+    <EditText
+        android:id="@+id/etsecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عدد دوم را وارد کنید"
+        android:inputType="number"
+        android:textDirection="rtl"
+
+
+        />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:textDirection="rtl">
+
+        <RadioButton
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جمع"
+            android:textDirection="rtl" />
+
+        <RadioButton
+            android:id="@+id/subtraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفریق"
+            android:textDirection="rtl"
+
+            />
+
+        <RadioButton
+            android:id="@+id/multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ضرب"
+            android:textDirection="rtl"
+
+            />
+
+        <RadioButton
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تقسیم"
+            android:textDirection="rtl"
+
+            />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="محاسبه"
+        android:layout_marginTop="335dp"
+
+        />
+
+</LinearLayout>
